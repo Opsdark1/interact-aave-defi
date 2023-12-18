@@ -1,0 +1,21 @@
+#dependecies:
+#  - aave/protocol-v2@1.0.1
+#solc:
+#  - "@aave=aave/protocol-v2@1.0.1"
+
+dotenv: .env
+
+networks:
+  sepolia:
+    weth_token: "0x5b071b590a59395fE4025A0Ccc1FcC931AAc1830"
+    pool_addresses: "0x012bAC54348C0E635dCAc9D5FB99f06F24136C9A"
+    link_eth_pricefeed: "0x42585eD362B3f1BCa95c640FdFf35Ef899212734"
+    link_token: "0x779877A7B0D9E8603169DdbD7836e478b4624789"
+  mainnet-fork-dev:
+    weth_token: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+    pool_addresses: "0xB53C1a33016B2DC2fF3653530bfF1848a515c8c5"
+    link_eth_pricefeed: "0xDC530D9457755926550b59e8ECcdaE7624181557"
+    link_token: "0x514910771AF9Ca656af840dff83E8264EcF986CA"
+
+wallets:
+  form_key: ${PRIVATE_KEY}
